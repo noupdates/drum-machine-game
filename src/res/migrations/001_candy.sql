@@ -11,7 +11,7 @@ SELECT song_id, 0, 3.148435374 FROM song_id_cte
 UNION ALL
 SELECT song_id, 1, 3.582131519 FROM song_id_cte
 UNION ALL
-SELECT song_id, 0, 4.056916100 FROM song_id_cte
+SELECT song_id, 3, 4.056916100 FROM song_id_cte
 UNION ALL
 SELECT song_id, 1, 4.468934240 FROM song_id_cte
 UNION ALL
@@ -31,21 +31,21 @@ SELECT song_id, 2, 8.475782313 FROM song_id_cte
 UNION ALL
 SELECT song_id, 0, 8.908979592 FROM song_id_cte
 UNION ALL
-SELECT song_id, 4, 9.371473923 FROM song_id_cte
+SELECT song_id, 2, 9.371473923 FROM song_id_cte
 UNION ALL
-SELECT song_id, 6, 9.616961451 FROM song_id_cte
+SELECT song_id, 1, 9.616961451 FROM song_id_cte
 UNION ALL
-SELECT song_id, 5, 10.026757370 FROM song_id_cte
+SELECT song_id, 1, 10.026757370 FROM song_id_cte
 UNION ALL
-SELECT song_id, 7, 10.261133787 FROM song_id_cte
+SELECT song_id, 2, 10.261133787 FROM song_id_cte
 UNION ALL
-SELECT song_id, 8, 10.686757370 FROM song_id_cte
+SELECT song_id, 2, 10.686757370 FROM song_id_cte
 UNION ALL
-SELECT song_id, 4, 11.145306122 FROM song_id_cte
+SELECT song_id, 2, 11.145306122 FROM song_id_cte
 UNION ALL
-SELECT song_id, 5, 11.597278912 FROM song_id_cte
+SELECT song_id, 1, 11.597278912 FROM song_id_cte
 UNION ALL
-SELECT song_id, 0, 12.038140590 FROM song_id_cte
+SELECT song_id, 2, 12.038140590 FROM song_id_cte
 UNION ALL
 SELECT song_id, 0, 12.501337868 FROM song_id_cte
 UNION ALL
@@ -57,15 +57,15 @@ SELECT song_id, 0, 14.688480726 FROM song_id_cte
 UNION ALL
 SELECT song_id, 0, 15.140453515 FROM song_id_cte
 UNION ALL
-SELECT song_id, 0, 15.592426304 FROM song_id_cte
+SELECT song_id, 4, 15.592426304 FROM song_id_cte
 UNION ALL
-SELECT song_id, 0, 16.028163265 FROM song_id_cte
+SELECT song_id, 5, 16.028163265 FROM song_id_cte
 UNION ALL
-SELECT song_id, 0, 16.481065760 FROM song_id_cte
+SELECT song_id, 6, 16.481065760 FROM song_id_cte
 UNION ALL
-SELECT song_id, 0, 16.912607710 FROM song_id_cte
+SELECT song_id, 7, 16.912607710 FROM song_id_cte
 UNION ALL
-SELECT song_id, 0, 17.366507937 FROM song_id_cte
+SELECT song_id, 8, 17.366507937 FROM song_id_cte
 UNION ALL
 SELECT song_id, 0, 17.828571429 FROM song_id_cte
 UNION ALL
@@ -81,15 +81,15 @@ SELECT song_id, 0, 20.009954649 FROM song_id_cte
 UNION ALL
 SELECT song_id, 1, 20.253310658 FROM song_id_cte
 UNION ALL
-SELECT song_id, 0, 20.710725624 FROM song_id_cte
+SELECT song_id, 1, 20.710725624 FROM song_id_cte
 UNION ALL
-SELECT song_id, 0, 20.934761905 FROM song_id_cte
+SELECT song_id, 1, 20.934761905 FROM song_id_cte
 UNION ALL
 SELECT song_id, 0, 21.353446712 FROM song_id_cte
 UNION ALL
 SELECT song_id, 0, 21.807278912 FROM song_id_cte
 UNION ALL
-SELECT song_id, 0, 22.241700680 FROM song_id_cte
+SELECT song_id, 1, 22.241700680 FROM song_id_cte
 UNION ALL
 SELECT song_id, 0, 22.688344671 FROM song_id_cte
 UNION ALL

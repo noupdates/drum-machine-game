@@ -43,8 +43,9 @@ class GameScene(UIScene):
         self.content = StretchedContainer(key="content",
                                           size=(AUTO, AUTO),
                                           display=Display.GRID,
-                                          grid_template_columns=[4 * 48 * PT, 4 * 48 * PT, 4 * 48 * PT],
-                                          gap=4 * 48 * PT,
+                                          grid_template_columns=[2 * 48 * PT, 2 * 48 * PT, 2 * 48 * PT],
+                                          grid_template_rows=[2 * 48 * PT, 2 * 48 * PT, 2 * 48 * PT],
+                                          gap=4 * 9 * PT,
                                           )
 
         self.countdown = StretchedText(key="countdown",
@@ -124,7 +125,7 @@ class GameScene(UIScene):
                               pr.YELLOW, ][0:num_of_keys]):
 
             # timings = sorted(random.choices(range(2, 20), k=5))
-            button = StretchedDMButton(key=f'button-{i}', size=(6 * 48 * PT, 6 * 48 * PT),
+            button = StretchedDMButton(key=f'button-{i}', size=(4 * 28 * PT, 4 * 28 * PT),
                                        db_key=k,
                                        pressed_func=self.dm_button_pressed, keyboard_key=i,
                                        display=Display.FLEX)
@@ -143,6 +144,18 @@ class GameScene(UIScene):
                     button_type = 'W'  # Top
                 elif i == pr.KeyboardKey.KEY_E:
                     button_type = 'E'  # Right
+                elif i == pr.KeyboardKey.KEY_A:
+                    button_type = 'A'  # Right    
+                elif i == pr.KeyboardKey.KEY_S:
+                    button_type = 'S'  # Right   
+                elif i == pr.KeyboardKey.KEY_D:
+                    button_type = 'D'  # Right   
+                elif i == pr.KeyboardKey.KEY_Z:
+                    button_type = 'Z'  # Right  
+                elif i == pr.KeyboardKey.KEY_X:
+                    button_type = 'X'  # Right   
+                elif i == pr.KeyboardKey.KEY_C:
+                    button_type = 'C'  # Right     
                 else:
                     button_type = 'UNKNOWN'  # Handle other keys if necessary
 
