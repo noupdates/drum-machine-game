@@ -1,0 +1,454 @@
+INSERT INTO song (name, artist, file_location) VALUES ('Candy', 'MSTR K', 'candy.wav');
+
+-- Get the song id for 'Candy' by MSTR K
+WITH song_id_cte AS (
+    SELECT id AS song_id FROM song WHERE name = 'Candy' AND artist = 'MSTR K' LIMIT 1
+)
+
+-- Insert multiple timing entries for the song using the retrieved song_id
+INSERT INTO timing (song_id, key_id, time_point)
+SELECT song_id, 0, 3.148435374 FROM song_id_cte
+UNION ALL
+SELECT song_id, 1, 3.582131519 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 4.056916100 FROM song_id_cte
+UNION ALL
+SELECT song_id, 1, 4.468934240 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 4.912879819 FROM song_id_cte
+UNION ALL
+SELECT song_id, 1, 5.360045351 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 5.779070295 FROM song_id_cte
+UNION ALL
+SELECT song_id, 1, 7.155804989 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 7.580634921 FROM song_id_cte
+UNION ALL
+SELECT song_id, 2, 8.027959184 FROM song_id_cte
+UNION ALL
+SELECT song_id, 2, 8.475782313 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 8.908979592 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 9.371473923 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 9.616961451 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 10.026757370 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 10.261133787 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 10.686757370 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 11.145306122 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 11.597278912 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 12.038140590 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 12.501337868 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 13.381269841 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 14.265238095 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 14.688480726 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 15.140453515 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 15.592426304 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 16.028163265 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 16.481065760 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 16.912607710 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 17.366507937 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 17.828571429 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 18.261111111 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 18.718185941 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 19.167981859 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 19.596213152 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 20.009954649 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 20.253310658 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 20.710725624 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 20.934761905 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 21.353446712 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 21.807278912 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 22.241700680 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 22.688344671 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 23.126167800 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 23.581292517 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 24.040589569 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 24.483310658 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 24.939818594 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 25.345804989 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 25.804104308 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 26.260385488 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 26.732290249 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 27.584716553 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 27.821972789 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 28.041496599 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 28.260362812 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 28.476054422 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 28.923945578 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 29.352199546 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 29.791814059 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 30.249523810 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 30.712698413 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 31.168662132 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 31.617006803 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 32.071564626 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 32.522857143 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 32.948775510 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 33.365487528 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 33.837256236 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 34.289342404 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 34.707460317 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 35.168571429 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 35.635941043 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 36.068276644 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 36.516575964 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 36.931315193 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 37.371541950 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 37.789546485 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 38.035804989 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 38.475034014 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 38.691179138 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 39.132789116 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 40.020317460 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 40.915963719 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 41.373061224 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 41.819863946 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 42.264172336 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 42.692176871 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 42.908775510 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 43.160589569 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 43.579002268 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 43.791405896 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 44.036553288 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 44.470068027 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 44.686621315 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 44.923650794 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 45.371451247 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 45.598299320 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 45.847596372 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 46.266281179 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 46.714603175 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 47.188208617 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 47.619546485 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 48.043514739 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 48.503968254 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 48.948934240 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 49.391746032 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 49.814920635 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 50.017120181 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 50.269773243 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 50.731927438 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 50.938140590 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 51.149863946 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 51.579297052 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 52.040702948 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 52.502857143 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 52.937074830 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 53.404603175 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 53.827709751 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 54.260793651 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 54.718049887 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 55.162970522 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 55.389410431 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 55.611156463 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 56.039229025 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 56.262176871 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 56.460453515 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 56.930929705 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 57.387460317 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 57.845532880 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 58.279070295 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 60.464081633 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 60.950725624 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 61.398798186 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 61.837052154 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 64.028594104 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 64.499863946 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 64.943922902 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 65.379229025 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 67.612766440 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 68.066235828 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 68.503696145 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 68.946666667 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 71.139954649 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 71.585011338 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 72.077278912 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 72.475328798 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 72.932154195 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 73.371678005 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 73.818480726 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 74.271746032 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 74.705759637 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 75.157981859 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 75.611655329 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 76.053424036 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 76.482335601 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 76.742063492 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 77.171043084 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 77.392040816 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 77.826666667 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 78.294353741 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 78.750498866 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 79.194625850 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 79.646122449 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 80.080702948 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 80.499705215 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 81.159954649 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 81.384965986 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 81.613151927 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 81.839342404 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 82.273492063 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 82.718934240 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 83.162993197 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 83.608253968 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 84.512154195 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 85.398662132 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 85.854965986 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 86.277233560 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 86.731564626 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 87.196507937 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 88.061405896 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 88.922312925 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 89.384988662 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 89.845532880 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 90.290589569 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 90.728253968 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 91.628049887 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 92.481201814 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 92.923446712 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 93.357460317 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 93.806099773 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 94.268049887 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 95.169024943 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 96.026984127 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 96.484285714 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 96.936870748 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 97.404761905 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 97.850544218 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 98.742154195 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 99.639614512 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 100.049319728 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 100.491655329 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 100.920022676 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 101.382653061 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 102.272448980 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 103.145328798 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 103.595600907 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 104.476848073 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 104.926371882 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 105.821904762 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 106.713582766 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 107.171292517 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 108.061950113 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 108.465170068 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 109.390136054 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 110.265419501 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 110.733378685 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 111.180702948 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 111.590997732 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 112.053537415 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 112.505306122 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 113.001655329 FROM song_id_cte
+UNION ALL
+SELECT song_id, 0, 113.440249433 FROM song_id_cte;
