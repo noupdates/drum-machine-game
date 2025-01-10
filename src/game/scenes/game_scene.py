@@ -136,49 +136,23 @@ class GameScene(UIScene):
             ))
             for timing in self.timings.get(k):
                 t = timing
+                # Create IndicatorEvent with the correct button type
+                if i == pr.KeyboardKey.KEY_Q:
+                    button_type = 'Q'  # Left
+                elif i == pr.KeyboardKey.KEY_W:
+                    button_type = 'W'  # Top
+                elif i == pr.KeyboardKey.KEY_E:
+                    button_type = 'E'  # Right
+                else:
+                    button_type = 'UNKNOWN'  # Handle other keys if necessary
+
                 self.music_timeline.add_event(
-                    IndicatorEvent(t - indicator_window, t + press_window_end, t, button, color=c))
+                    IndicatorEvent(t - indicator_window, t + press_window_end, t, button, color=c, button_type=button_type))
                 self.music_timeline.add_event(
                     ButtonPressEvent(t - press_window_start, t + press_window_end, i, perfect_time=t))
             self.content.add(button)
 
-        # Adding a second button (for example, KEY_W)
-        second_button_key = pr.KeyboardKey.KEY_W  # Define the key for the second button
-        second_button_color = pr.PURPLE  # Define a color for the second button
-        second_button_db_key = max(self.timings.keys()) + 1  # Assign a new db_key
-
-        second_button = StretchedDMButton(key='button-second', size=(6 * 48 * PT, 6 * 48 * PT),
-                                        db_key=second_button_db_key,
-                                        pressed_func=self.dm_button_pressed, keyboard_key=second_button_key,
-                                        display=Display.FLEX)
-        second_button.add(StretchedText(
-            text='W',  # Display character for the second button
-            align_self=AlignSelf.CENTER,
-            justify_self=JustifySelf.CENTER,
-            padding=2 * PCT
-        ))
-
-        # Add the second button to the content
-        #self.content.add(second_button)
-
-        # Adding a third button (for example, KEY_E)
-        third_button_key = pr.KeyboardKey.KEY_E  # Define the key for the third button
-        third_button_color = pr.ORANGE  # Define a color for the third button
-        third_button_db_key = max(self.timings.keys()) + 2  # Assign a new db_key
-
-        third_button = StretchedDMButton(key='button-third', size=(6 * 48 * PT, 6 * 48 * PT),
-                                        db_key=third_button_db_key,
-                                        pressed_func=self.dm_button_pressed, keyboard_key=third_button_key,
-                                        display=Display.FLEX)
-        third_button.add(StretchedText(
-            text='E',  # Display character for the third button
-            align_self=AlignSelf.CENTER,
-            justify_self=JustifySelf.CENTER,
-            padding=2 * PCT
-        ))
-
-        # Add the third button to the content
-        #self.content.add(third_button)            
+                      
 
         self.root.compute_layout(available_space=(pr.get_screen_width(), pr.get_screen_height()))
         print(self.dialog.get_box())
