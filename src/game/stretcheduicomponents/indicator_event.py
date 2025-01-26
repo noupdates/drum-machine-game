@@ -56,14 +56,14 @@ class IndicatorEvent(Event):
         pr.draw_rectangle(int(x_position), int(y_position), int(bounding_box.height), 20, self.color)
 
     def update_indicator_right(self, current_time, time_since_start):
-        t = self.duration - time_since_start + 0.2
+        t = self.duration - time_since_start + 0.5
         bounding_box = self.button.get_box(edge=Edge.CONTENT, relative=False)
         offset = t * 300  # Coming from the right
         x_position = bounding_box.x + offset  # Move leftwards
         pr.draw_rectangle(int(x_position), int(bounding_box.y), 20, int(bounding_box.height), self.color)
 
     def update_indicator_bottom(self, current_time, time_since_start):
-        t = self.duration - time_since_start + 0.4
+        t = self.duration - time_since_start + 0.1
         bounding_box = self.button.get_box(edge=Edge.CONTENT, relative=False)
         offset = t * IndicatorEvent.OFFSET_VALUE  # Coming from the bottom
         x_position = bounding_box.x  # Keep x position constant
