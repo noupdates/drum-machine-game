@@ -30,10 +30,10 @@ class GameScene(UIScene):
         self.last_frame_played_time = 0.0
         self.countdown_ready = False
         self.scoreText = StretchedText(
-            text="SCORE: 0",
+            text="SCORE: 000",
             align_self=AlignSelf.STRETCH,
-            justify_self=JustifySelf.END,
-            padding=2 * PCT
+            justify_self=JustifySelf.CENTER,
+            padding=-1 * PCT
         )
 
         self.music_stream = pr.load_music_stream(
@@ -81,7 +81,7 @@ class GameScene(UIScene):
                     StretchedText(
                         text=f"{song_info_with_timings['artist']} - {song_info_with_timings['name']}",
                         align_self=AlignSelf.STRETCH,
-                        padding=2 * PCT,
+                        padding=-1 * PCT,
                         appearance=StretchedTextAppearance(fontColor=pr.Color(255, 255, 255, 255))
                     ),
                     self.scoreText,

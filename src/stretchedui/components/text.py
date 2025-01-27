@@ -75,10 +75,28 @@ class StretchedText(StretchedObject):
         pr.begin_shader_mode(self.shader)
         pr.draw_text_ex(self.font, self.text, pr.Vector2(int(inner_bounding_box.x), int(inner_bounding_box.y)),
                         self.font_size, 0, pr.BLACK)
-        rect = pr.Rectangle(int(inner_bounding_box.x),
+        
+        if self.text == "W":
+        # Use the original width for "W"
+            rect = pr.Rectangle(int(inner_bounding_box.x),
                             int(inner_bounding_box.y),
-                            int(inner_bounding_box.width),
+                            int(inner_bounding_box.width)-5,  # No additional width for "W"
                             int(inner_bounding_box.height))
+        elif self.text == "Q":
+            rect = pr.Rectangle(int(inner_bounding_box.x),
+                            int(inner_bounding_box.y),
+                            int(inner_bounding_box.width)+26,  # No additional width for "W"
+                            int(inner_bounding_box.height))
+        elif self.text == "E":
+            rect = pr.Rectangle(int(inner_bounding_box.x),
+                            int(inner_bounding_box.y),
+                            int(inner_bounding_box.width)+35,  # No additional width for "W"
+                            int(inner_bounding_box.height))
+        else:
+            rect = pr.Rectangle(int(inner_bounding_box.x),
+                                int(inner_bounding_box.y),
+                                int(inner_bounding_box.width)+30,
+                                int(inner_bounding_box.height))
         pr.end_shader_mode()
 
         pr.draw_rectangle_lines_ex(rect, 1, pr.GREEN)

@@ -32,7 +32,7 @@ class StretchedDMButton(StretchedObject):
         self.indicator_time = 2.
         self.pressed_func = pressed_func
         self.button_color = (255, 255, 255, 255)
-        self.default_button_color = (255, 255, 255, 255)
+        self.default_button_color = (36, 8, 8, 255)
         self.miss_button_color = (255, 0, 0, 255)
         self.hit_button_color = (0, 255, 0, 255)
         self.perfect_hit_button_color = (0, 0, 255, 255)
