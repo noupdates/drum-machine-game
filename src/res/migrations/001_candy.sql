@@ -9,7 +9,7 @@ WITH song_id_cte AS (
 INSERT INTO timing (song_id, key_id, time_point)
 SELECT song_id, 0, 3.148435374 FROM song_id_cte
 UNION ALL
-SELECT song_id, 0, 3.582131519 FROM song_id_cte
+SELECT song_id, 0, 4.582131519 FROM song_id_cte
 UNION ALL
 SELECT song_id, 1, 3.582131519 FROM song_id_cte
 UNION ALL
