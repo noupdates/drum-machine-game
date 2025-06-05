@@ -79,18 +79,18 @@ UNION ALL
 SELECT song_id, 2, 12.682 FROM song_id_cte
 UNION ALL
 
-
-SELECT song_id, 3, 13.071 FROM song_id_cte
+SELECT song_id, 3, 13.201 FROM song_id_cte
 UNION ALL
-SELECT song_id, 5, 13.461 FROM song_id_cte
+SELECT song_id, 5, 13.481 FROM song_id_cte
 UNION ALL
-SELECT song_id, 3, 14.035 FROM song_id_cte
+SELECT song_id, 3, 14.045 FROM song_id_cte
 UNION ALL
-SELECT song_id, 3, 14.481 FROM song_id_cte
+SELECT song_id, 5, 14.225 FROM song_id_cte
 UNION ALL
-SELECT song_id, 5, 14.846 FROM song_id_cte
+SELECT song_id, 3, 14.521 FROM song_id_cte
 UNION ALL
-
+SELECT song_id, 5, 14.686 FROM song_id_cte
+UNION ALL
 
 SELECT song_id, 0, 14.893 FROM song_id_cte
 UNION ALL
@@ -133,7 +133,6 @@ SELECT song_id, 8, 21.288 FROM song_id_cte
 UNION ALL
 SELECT song_id, 7, 21.543 FROM song_id_cte
 UNION ALL
-
 
 SELECT song_id, 0, 40.915963719 FROM song_id_cte
 UNION ALL
